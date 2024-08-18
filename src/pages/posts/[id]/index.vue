@@ -2,11 +2,13 @@
   <q-page padding>
     <PostDetails></PostDetails>
     <q-separator class="q-my-xl"></q-separator>
+    <PostComments />
   </q-page>
 </template>
 
 <script setup>
 import PostDetails from "./components/PostDetails.vue";
+import PostComments from "./components/PostComments.vue";
 </script>
 
 <style lang="scss" scoped>
