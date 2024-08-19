@@ -27,7 +27,7 @@ import PostWriteDialog from "src/components/apps/post/PostWriteDialog.vue";
 const router = useRouter;
 
 const posts = Array.from(Array(20), (_, index) => ({
-  id: index,
+  id: "A" + index,
   title: "Vue3 Firebase  강좌" + index,
   content:
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit necessitatibus voluptatum unde, temporibus debitis perspiciatis quos doloribus eaque nostrum, placeat veritatis voluptates quod ex laborum nulla hicaliquid assumenda laboriosam.",
