@@ -23,6 +23,21 @@
           @click="openAuthDialog"
           label="로그인/회원가입"
         ></q-btn>
+        <q-btn flat dense>
+          <q-avatar>
+            <img src="https://cdn.quasar.dev/img/avatar.png" />
+          </q-avatar>
+          <q-menu>
+            <q-list style="min-width: 100px">
+              <q-item clickable v-close-popup to="/mypage/profile">
+                <q-item-section>프로필</q-item-section>
+              </q-item>
+              <q-item clickable v-close-popup>
+                <q-item-section>로그아웃</q-item-section>
+              </q-item>
+            </q-list>
+          </q-menu>
+        </q-btn>
       </q-toolbar>
     </q-header>
 
@@ -47,6 +62,7 @@ const pageContainerStyles = computed(() => ({
 }));
 
 const authDialog = ref(false);
+
 const openAuthDialog = () => {
   authDialog.value = true;
 };

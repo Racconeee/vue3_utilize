@@ -24,7 +24,7 @@ import PostRightBar from "./components/PostRightBar.vue";
 import { ref } from "vue";
 import PostWriteDialog from "src/components/apps/post/PostWriteDialog.vue";
 
-const router = useRouter;
+const router = useRouter();
 
 const posts = Array.from(Array(20), (_, index) => ({
   id: "A" + index,
